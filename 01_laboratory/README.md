@@ -82,40 +82,50 @@ Docker является относительно новым и быстро ра
 Согласно инструкции [docs.docker](docs.docker.com/docker-for-windows/install/)  Docker Desktop устанавливается следующим образом:
 
 1. По адресу [docs.docker](docs.docker.com/docker-for-windows/install/) нажать на кнопку "Download from Docker Hub".
+
 ![Страница руководства по установки Docker Desktop на Windows](/data/docker_install_windows_0.png)
 
 2. В результате чего мы будем перенаправленны на [id.docker.com/login/](id.docker.com/login/), где следует ввести логин и пароль для входа в систему.
+
 ![Страница авторизации в Docker Hub](/data/docker_install_windows_1.png)
 
 3. Оказавшись на [hub.docker](hub.docker.com/), осуществляется скачивание "Docker for Window installer.exe" посредством выбора сооствествующей кнопки загрузки.
+
 ![Страница Docker Hub, на которой предлагается сказать Docker Desktop](/data/docker_install_windows_2.png)
 
 4. Запустить установочных исполняемый файл.
+
 ![Изображение установочного файла "Docker for Window installer.exe"](/data/docker_install_windows_3.png)
 
 5. Из предложенного: добавление ярлыка на рабочий стол; использование контейнеров Windows, вместо контейнеров Linux, - выбирается необходимое.
+
 ![Диалоговое окно инстолятора docker](/data/docker_install_windows_4.png)
 
 6. После установки следует выйти из текущей рабочей сессии пользователя.
+
 ![Преложение выйти, следующее за завершением установки](/data/docker_install_windows_5.png)
 
 7. После входа в систему, docker предложит активизировать функции Hyper-V и Containers (для этого потребуется перезагрузка компьютера).
+
 ![Сообщение предлагающее активизировать дополнительные функции](/data/docker_install_windows_6.png)
 
 8. После перезагрузки docker будет запущен в фоновом режиме, и доступен в области уведомлений.
+
 ![Docker в области уведомлений](/data/docker_install_windows_7.png)
 
 9. Для открытия свойств docker следует: выбрать плитку программы в области уведомлений, нажать правой кнопкой мыши, и выбрать пункт "Settings".
+
 ![Окно настроек docker](/data/docker_install_windows_8.png)
+
 
 ### Установка Docker на Ubuntu
 
 Для установки Docker на Ubuntu, в терминале достаточно выполнить следующую комманду:
-'''bash
+```bash
 sudo apt install docker docker.io
-'''
+```
 
 Для запуска команды docker без использования sudo, требуется добавить пользователя (обладающего правами root) в группу docker. Для этого следует выполнить следующую комманду:
-'''
+```
 sudo usermod -aG docker USER_NAME
-'''
+```
