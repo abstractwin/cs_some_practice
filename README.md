@@ -1,2 +1,3 @@
-# cs_some_practice
-01_laboratory - пример использования docker в качестве средства виртуализации.
+# laboratories:
+## virtualization:
+01_laboratory - Использование Docker в качестве средства виртуализации.
